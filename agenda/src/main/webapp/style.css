@@ -1,8 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 h1 {
 	color: #66bbff;
@@ -15,4 +24,26 @@ h1 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 1.2rem;
+	border: 0;
+	cursor: pointer;
+}
+.contactForm {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.formContainer {
+	border: none;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.inputContainer {
+	height: 3rem;
+	width: 90%;
 }

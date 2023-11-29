@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Agenda de contatos</title>
+<link rel="icon" href="imagens/telefone_img.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>Criar novo contato</h1>
+	<form name="contactForm" class="contactForm" action="">
+		<div class="formContainer">
+			<div class="inputContainer">
+				<input type="text" name="nome" placeholder="Nome" />
+			</div>
+			<div>
+				<input type="number" name="fone" placeholder="Fone" />
+			</div>
+			<div>
+				<input type="email" name="email" placeholder="E-mail" />
+			</div>
+		</div>
+		<button class="botao1" type="submit" onclick="validade()">Adicionar</button>
+	</form>
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
