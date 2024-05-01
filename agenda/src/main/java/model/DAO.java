@@ -2,6 +2,7 @@ package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 public class DAO {
 
@@ -23,6 +24,23 @@ public class DAO {
 		} catch (Exception e) {
 			System.out.println(e);
 			return null;
+		}
+	}
+	
+	public void insertContact(JavaBeans contact) {
+		String create = "insert into contacts (name, phone, email) values (?,?,?)";
+		
+		try {
+			Connection con = connect();
+			
+			PreparedStatement pst = con.prepareStatement(create);
+			pst.setString(1, contact.getName());
+			pst.setString(2, contact.getPhone());
+			pst.setString(3, contact.getEmail());
+			pst.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }

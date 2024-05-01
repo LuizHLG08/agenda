@@ -44,6 +44,10 @@ public class Controller extends HttpServlet {
 		contact.setName(request.getParameter("name"));
 		contact.setPhone(request.getParameter("phone"));
 		contact.setEmail(request.getParameter("email"));
+		
+		dao.insertContact(contact);
+		
+		response.sendRedirect("main");;
 	}
 	
 
