@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,6 +41,10 @@ public class Controller extends HttpServlet {
 	
 	protected void contacts(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ArrayList<JavaBeans> list = dao.listContacts();
+		
+		request.setAttribute("contacts", list);
+		RequestDispatcher rd = request.getRequestDispatcher("agenda.jsp");
+		rd.forward(request, response);
 	}
 	
 	protected void newContact(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

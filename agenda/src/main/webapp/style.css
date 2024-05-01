@@ -71,3 +71,32 @@ input {
 	height: 100%;
 	padding-left: 1rem;
 }
+
+.contactsTable {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#tableHeader p {
+	background-color: #66bbff;
+	color: #fff;
+}
+.tableItem {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.tableItem p {
+	border: 1px solid #ddd;
+	width: 100%;
+	min-width: 178px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+	flex-wrap: wrap;
+	padding-left: 1rem;
+}
