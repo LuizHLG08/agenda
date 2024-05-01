@@ -1,14 +1,14 @@
 function validade() {
-	let nome = contactForm.nome.value
-	let fone = contactForm.fone.value
+	let name = contactForm.name.value
+	let phone = contactForm.phone.value
 	
-	if(nome === "") {
+	if(name === "") {
 		alert("Preencha o campo Nome")
-		contactForm.nome.focus()
+		contactForm.name.focus()
 		return false
-	} else if (fone === "") {
+	} else if (phone === "") {
 		alert("Preencha o campo Fone")
-		contactForm.fone.focus()
+		contactForm.phone.focus()
 		return false
 	} else {
 		document.forms["contactForm"].submit()

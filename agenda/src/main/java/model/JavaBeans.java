@@ -3,18 +3,18 @@ package model;
 public class JavaBeans {
 	
 	private String idcon;
-	private String nome;
-	private String fone;
+	private String name;
+	private String phone;
 	private String email;
 	
 	public JavaBeans () {
 	}
 	
-	public JavaBeans(String idcon, String nome, String fone, String email) {
+	public JavaBeans(String idcon, String name, String phone, String email) {
 		super();
 		this.idcon = idcon;
-		this.nome = nome;
-		this.fone = fone;
+		this.name = name;
+		this.phone = phone;
 		this.email = email;
 	}
 
@@ -25,18 +25,18 @@ public class JavaBeans {
 		this.idcon = idcon;
 	}
 	
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String getFone() {
-		return fone;
+	public String getPhone() {
+		return phone;
 	}
-	public void setFone(String fone) {
-		this.fone = fone;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	
 	public String getEmail() {
