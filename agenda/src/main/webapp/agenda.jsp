@@ -9,7 +9,9 @@
 <link rel="icon" href="imagens/telefone_img.png">
 </head>
 <body>
-	<h1>Agenda de Contatos</h1>
-	<a class="botao1" href="new.html">Novo contato</a>
+	<div class="jspContainer">
+		<h1 class="jspTitle">Agenda de Contatos</h1>
+		<a class="button1 jspButton" href="new.html">Novo contato</a>
+	</div>
 </body>
 </html>
